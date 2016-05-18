@@ -1,12 +1,12 @@
-prefix=/usr/projects/G-P-S/openssl/openssl-1.0.1p/../openssl-exports/linux-arm-a9s-debug
+prefix=/usr/projects/G-P-S/openssl/openssl/../openssl-exports/linux-arm-a9s-debug
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
 Name: OpenSSL-libcrypto
 Description: OpenSSL cryptography library
-Version: 1.0.1p
+Version: 1.0.2h
 Requires: 
 Libs: -L${libdir} -lcrypto
-Libs.private: 
+Libs.private: -ldl
 Cflags: -I${includedir} 

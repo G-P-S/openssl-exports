@@ -1,0 +1,9 @@
+prefix=/usr/projects/G-P-S/openssl/openssl/../openssl-exports/linux-x64-debug
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Version: 1.0.2h
+Requires: libssl libcrypto

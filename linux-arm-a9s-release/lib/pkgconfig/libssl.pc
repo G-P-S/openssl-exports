@@ -1,12 +1,12 @@
-prefix=/usr/projects/G-P-S/openssl/openssl-1.0.1p/../openssl-exports/linux-arm-a9s-release
+prefix=/usr/projects/G-P-S/openssl/openssl/../openssl-exports/linux-arm-a9s-release
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
-Name: OpenSSL
+Name: OpenSSL-libssl
 Description: Secure Sockets Layer and cryptography libraries
-Version: 1.0.1p
-Requires: 
-Libs: -L${libdir} -lssl -lcrypto
-Libs.private: 
+Version: 1.0.2h
+Requires.private: libcrypto
+Libs: -L${libdir} -lssl
+Libs.private: -ldl
 Cflags: -I${includedir} 
